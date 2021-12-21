@@ -1,4 +1,12 @@
 import menu
+from os import system, name
+
+def clear():
+    if name == 'nt':
+        _ = system('cls')
+    else:
+        _ = system('clear')
+
 
 class display:
     def __init__(self):
@@ -31,6 +39,7 @@ class display:
         while(True):
             self.display_menu()
             user_input = self.get_user_input()
+            clear()
             if user_input == -1:
                 print("invalid option")
             else:
