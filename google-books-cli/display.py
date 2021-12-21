@@ -32,7 +32,7 @@ class display:
     
     def select_menu_option(self, option_index):
         func = self.current_menu.get_functions(option_index)
-        if type(func) == menu:
+        if isinstance(func, menu.menu):
             self.set_current_menu(func)
 
     def main(self):
@@ -44,5 +44,5 @@ class display:
                 print("invalid option")
             else:
                 self.select_menu_option(user_input)
-                
+            print()
 
