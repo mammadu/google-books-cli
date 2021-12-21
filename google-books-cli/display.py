@@ -13,7 +13,13 @@ class display:
 
     def get_user_input(self):
         user_input = input("Select numeric option: ")
-        user_input = int(user_input)
+        try:
+            user_input = int(user_input)
+        except ValueError as ex:
+            user_input = -1
+        
+        if user_input not in range(0, len(self.current_menu.options_list_dictionary)):
+            user_input = -1
         return user_input
     
     def select_menu_option(self, option_index):
@@ -25,5 +31,9 @@ class display:
         while(True):
             self.display_menu()
             user_input = self.get_user_input()
-            self.select_menu_option(user_input)
+            if user_input == -1:
+                print("invalid option")
+            else:
+                self.select_menu_option(user_input)
+                
 
