@@ -2,6 +2,8 @@ import gb
 import pandas
 from datetime import datetime
 
+reading_list_location = "reading_list.csv"
+
 class menu:
     def __init__(self):
         self.options_list_dictionary = []
@@ -24,7 +26,7 @@ class main_menu(menu):
         return query_menu()
 
     def display_local_reading_list(self):
-        print('Display local reading list')
+        return reading_list_menu()
 
     def quit(self):
         print('quitting')
@@ -34,12 +36,12 @@ class query_menu(menu):
     def __init__(self):
         self.options_list_dictionary = {
             'Enter new query': 'enter_query'
-            , 'Add title to favorites': 'add_to_favorites'
+            , 'Add title to reading list': 'add_to_reading_list'
             , 'Return to main menu': 'return_to_main_menu'
         }
         self.backend = gb.gb()
     
-    def add_to_favorites(self):
+    def add_to_reading_list(self):
         if len(self.backend.results_list) == 0:
             print('you must first enter a query')
         else:
@@ -54,17 +56,39 @@ class query_menu(menu):
                 row = self.backend.results_list[index]
                 row['Date added'] = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
                 df = pandas.DataFrame(row)
-                df.to_csv("favorites.csv", index=False, mode='a')
+                with open(reading_list_location, 'a') as file:
+                    df.to_csv(file, index=False, mode='a', header=file.tell()==0)
                 print(df)
             else:
                 print("invalid index")
-
-
 
     def enter_query(self):
         title = input("enter title: ")
         self.backend.results_of_query(title)
 
+    def return_to_main_menu(self):
+        return main_menu()
 
+class reading_list_menu(menu):
+    def __init__(self):
+        self.options_list_dictionary = {
+            'Display reading list': 'display_reading_list'
+            , 'Sort titles': 'sort_titles'
+            , 'Remove title from reading list': 'remove_title'
+            , 'Return to main menu': 'return_to_main_menu'
+        }
+    
+    def display_reading_list(self):
+        df = pandas.read_csv(reading_list_location)
+        formatted_index = (f"{i}:" for i in range(len(df)))
+        df.set_index(formatted_index, inplace=True)
+        print(df)
+
+    def sort_titles(self):
+        print('sort titles')
+
+    def remove_title(self):
+        print('remove title')
+    
     def return_to_main_menu(self):
         return main_menu()
