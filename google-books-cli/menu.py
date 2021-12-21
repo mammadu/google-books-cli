@@ -4,9 +4,9 @@ class menu:
     
     def get_functions(self, option_index, arguments=[]):
         try:
-            getattr(self, self.options_list_dictionary.values()[option_index])(arguments)
+            getattr(self, list(self.options_list_dictionary.values())[option_index])(arguments)
         except:
-            getattr(self, self.options_list_dictionary.values()[option_index])(*arguments)
+            getattr(self, list(self.options_list_dictionary.values())[option_index])(*arguments)
 
 class main_menu(menu):
     def __init__(self):
@@ -24,3 +24,4 @@ class main_menu(menu):
 
     def quit(self):
         print('quitting')
+        quit()
