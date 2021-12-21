@@ -1,3 +1,5 @@
+import gb
+
 class menu:
     def __init__(self):
         self.options_list_dictionary = []
@@ -35,7 +37,9 @@ class query_menu(menu):
     
     def enter_query(self):
         title = input("enter title: ")
-        print(title)
+        books = gb.gb()
+        books.query_database(title)
+
 
     def return_to_main_menu(self):
         return main_menu()
