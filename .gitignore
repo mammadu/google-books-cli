@@ -1,3 +1,5 @@
 __pycache__/
 *.json
 *.csv
+/dist
+/google_books_cli.egg-info/

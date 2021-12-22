@@ -55,7 +55,8 @@ class query_menu(menu):
             if index != -1 and index in range(len(self.backend.results_list)):
                 row = self.backend.results_list[index]
                 row['Date added'] = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
-                df = pandas.DataFrame(row)
+                row['Authors'] = ', '.join(row['Authors'])
+                df = pandas.DataFrame.from_records([row])
                 with open(reading_list_location, 'a') as file:
                     df.to_csv(file, index=False, mode='a', header=file.tell()==0)
                 print(df)
@@ -85,10 +86,10 @@ class reading_list_menu(menu):
         print(df)
 
     def sort_titles(self):
-        print('sort titles')
+        print('this option is not yet implemented')
 
     def remove_title(self):
-        print('remove title')
+        print('this option is not yet implemented')
     
     def return_to_main_menu(self):
         return main_menu()
