@@ -80,10 +80,10 @@ class reading_list_menu(menu):
         }
     
     def display_reading_list(self):
-        df = pandas.read_csv(reading_list_location)
-        formatted_index = (f"{i}:" for i in range(len(df)))
-        df.set_index(formatted_index, inplace=True)
-        print(df)
+        dataframe = pandas.read_csv(reading_list_location)
+        formatted_index = (f"{i}:" for i in range(len(dataframe)))
+        dataframe.set_index(formatted_index, inplace=True)
+        print(dataframe)
 
     def sort_titles(self):
         print('sort titles')

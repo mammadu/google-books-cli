@@ -10,6 +10,7 @@ class gb_backend:
         url = ''.join([self.baseurl, query])
         response = requests.get(url)
         data = response.json()
+        #debug
         with open("test_for_bad_strings.json", "w") as file:
             file.write(str(data))
         # print(data) #debug
