@@ -31,9 +31,9 @@ class display:
         return user_input
     
     def select_menu_option(self, option_index):
-        func = self.current_menu.get_functions(option_index)
-        if isinstance(func, menu.menu):
-            self.set_current_menu(func)
+        function = self.current_menu.get_functions(option_index)
+        if isinstance(function, menu.menu):
+            self.set_current_menu(function)
 
     def main(self):
         while(True):

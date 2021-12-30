@@ -1,15 +1,18 @@
 import requests
 import pandas
 
-class gb:
+class gb_backend:
     def __init__(self):
         self.baseurl = 'https://www.googleapis.com/books/v1/volumes?q='
         self.results_list = []
 
     def query_database(self, query):
         url = ''.join([self.baseurl, query])
-        r = requests.get(url)
-        data = r.json()
+        response = requests.get(url)
+        data = response.json()
+        with open("test_for_bad_strings.json", "w") as file:
+            file.write(str(data))
+        # print(data) #debug
         return data
 
     def clear_results_list(self):
@@ -32,8 +35,8 @@ class gb:
 
     def print_results_list(self):
         formatted_index = (f"{i}:" for i in range(0,len(self.results_list)))
-        df = pandas.DataFrame(self.results_list, index=formatted_index)
-        print(df.rename_axis('Index', axis='columns'))
+        dataframe = pandas.DataFrame(self.results_list, index=formatted_index)
+        print(dataframe.rename_axis('Index', axis='columns'))
 
 
     def results_of_query(self, query):

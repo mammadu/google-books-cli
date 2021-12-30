@@ -1,4 +1,4 @@
-import gb
+import gb_backend
 import pandas
 from datetime import datetime
 
@@ -39,7 +39,7 @@ class query_menu(menu):
             , 'Add title to reading list': 'add_to_reading_list'
             , 'Return to main menu': 'return_to_main_menu'
         }
-        self.backend = gb.gb()
+        self.backend = gb_backend.gb_backend()
     
     def add_to_reading_list(self):
         if len(self.backend.results_list) == 0:
@@ -55,10 +55,11 @@ class query_menu(menu):
             if index != -1 and index in range(len(self.backend.results_list)):
                 row = self.backend.results_list[index]
                 row['Date added'] = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
-                df = pandas.DataFrame(row)
+                row['Authors'] = ', '.join(row['Authors'])
+                dataframe = pandas.DataFrame.from_records([row])
                 with open(reading_list_location, 'a') as file:
-                    df.to_csv(file, index=False, mode='a', header=file.tell()==0)
-                print(df)
+                    dataframe.to_csv(file, index=False, mode='a', header=file.tell()==0)
+                print(dataframe)
             else:
                 print("invalid index")
 
