@@ -2,8 +2,9 @@ import pathlib
 import sys
 import json
 
-source_path = str(pathlib.Path(__file__).resolve().parent.parent.joinpath("google-books-cli"))
-sys.path.insert(0, source_path)
+test_path = pathlib.Path(__file__).resolve().parent
+source_path = test_path.parent.joinpath("google-books-cli")
+sys.path.insert(0, str(source_path))
 
 import gb_backend
 
@@ -17,7 +18,8 @@ def parse_data_setup(file_name):
 
 #test if parse_data properly fills gb_backend.results_list when using good data
 def test_parse_data_good_value():
-    results_list = parse_data_setup("good_query.json")
+    test_file = str(test_path.joinpath("good_query.json"))
+    results_list = parse_data_setup(test_file)
     expected_results_list = [
         {'Title': 'Start with Why', 'Authors': ['Simon Sinek'], 'Publisher': 'Penguin'}
         , {'Title': 'Start', 'Authors': ['Jon Acuff'], 'Publisher': 'Ramsey Press'}
@@ -30,7 +32,8 @@ def test_parse_data_good_value():
 
 #test edge case where user queries blank space
 def test_parse_data_blank_query():
-    empty_results_list = parse_data_setup("blank_query.json")
+    test_file = str(test_path.joinpath("blank_query.json"))
+    empty_results_list = parse_data_setup(test_file)
     expected_results_list = [
         {'error code': 400, 'message': "Missing query."}
     ]
@@ -39,7 +42,8 @@ def test_parse_data_blank_query():
 
 #test edge case where there are less than 5 results from a query
 def test_parse_data_less_than_5_results():
-    single_result_list = parse_data_setup("1_result.json")
+    test_file = str(test_path.joinpath("1_result.json"))
+    single_result_list = parse_data_setup(test_file)
     expected_results_list = [
         {'Title': "Worldwide Government Directory with Intergovernmental Organizations 2013", 
         'Authors': ["John Martino"], 
@@ -47,4 +51,3 @@ def test_parse_data_less_than_5_results():
         ]
 
     assert single_result_list == expected_results_list
-    
