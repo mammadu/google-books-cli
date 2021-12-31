@@ -1,6 +1,6 @@
 import requests
 import pandas
-import json
+
 
 class GbBackend:
     def __init__(self):
@@ -11,10 +11,6 @@ class GbBackend:
         url = ''.join([self.baseurl, query])
         response = requests.get(url)
         data = response.json()
-        #debug
-        # with open("bad_query.json", "w") as file:
-        #     json.dump(data, file)
-        # print(data) #debug
         return data
 
     def clear_results_list(self):
@@ -38,7 +34,7 @@ class GbBackend:
             }
             try:
                 result_dict['Publisher'] = data['items'][i]['volumeInfo']['publisher']
-            except KeyError as ex:
+            except KeyError:
                 result_dict['Publisher'] = 'N/A'
             self.update_results_list(result_dict)
 
@@ -51,11 +47,10 @@ class GbBackend:
             self.valid_data_handler(data, length)
 
     def print_results_list(self):
-        formatted_index = (f"{i}:" for i in range(0,len(self.results_list)))
+        formatted_index = (f"{i}:" for i in range(0, len(self.results_list)))
         dataframe = pandas.DataFrame(self.results_list, index=formatted_index)
         pandas.set_option('display.max_colwidth', None)
         print(dataframe.rename_axis('Index', axis='columns'))
-
 
     def results_of_query(self, query):
         self.clear_results_list()

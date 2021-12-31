@@ -7,15 +7,17 @@ source_path = pathlib.Path(__file__).resolve().parent
 
 reading_list_location = str(source_path.joinpath("reading_list.csv"))
 
+
 class Menu:
     def __init__(self):
         self.options_list_dictionary = []
-    
+
     def get_functions(self, option_index, arguments=[]):
         try:
             return getattr(self, list(self.options_list_dictionary.values())[option_index])(arguments)
-        except:
+        except Exception:
             return getattr(self, list(self.options_list_dictionary.values())[option_index])(*arguments)
+
 
 class MainMenu(Menu):
     def __init__(self):
@@ -35,6 +37,7 @@ class MainMenu(Menu):
         print('quitting')
         quit()
 
+
 class SubMenu(Menu):
     def display_reading_list(self):
         print("Current reading list")
@@ -45,6 +48,7 @@ class SubMenu(Menu):
 
     def return_to_main_menu(self):
         return MainMenu()
+
 
 class QueryMenu(SubMenu):
     def __init__(self):
@@ -62,10 +66,10 @@ class QueryMenu(SubMenu):
     def convert_index_to_int(self, index):
         try:
             index = int(index)
-        except ValueError as ex:
+        except ValueError:
             index = -1
         return index
-    
+
     def format_dataframe(self, index, backend_results_list):
         row = backend_results_list[index]
         row['Date added'] = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
@@ -75,7 +79,7 @@ class QueryMenu(SubMenu):
 
     def dataframe_to_csv(self, dataframe, read_list_location):
         with open(read_list_location, 'a') as file:
-            dataframe.to_csv(file, index=False, mode='a', header=file.tell()==0)
+            dataframe.to_csv(file, index=False, mode='a', header=file.tell() == 0)
 
     def add_to_reading_list(self):
         if len(self.backend.results_list) == 0:
@@ -101,7 +105,7 @@ class ReadingListMenu(SubMenu):
             , 'Remove title from reading list': 'remove_title'
             , 'Return to main menu': 'return_to_main_menu'
         }
-    
+
     def sort_titles(self):
         print('This feature is not yet implemented')
 

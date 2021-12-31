@@ -1,6 +1,7 @@
 import menu
 from os import system, name
 
+
 def clear():
     if name == 'nt':
         _ = system('cls')
@@ -23,13 +24,13 @@ class Display:
         user_input = input("Select numeric option: ")
         try:
             user_input = int(user_input)
-        except ValueError as ex:
+        except ValueError:
             user_input = -1
-        
+
         if user_input not in range(0, len(self.current_menu.options_list_dictionary)):
             user_input = -1
         return user_input
-    
+
     def select_menu_option(self, option_index):
         function = self.current_menu.get_functions(option_index)
         if isinstance(function, menu.Menu):
@@ -45,4 +46,3 @@ class Display:
             else:
                 self.select_menu_option(user_input)
             print()
-
