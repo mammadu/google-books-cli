@@ -7,7 +7,7 @@ source_path = pathlib.Path(__file__).resolve().parent
 
 reading_list_location = str(source_path.joinpath("reading_list.csv"))
 
-class menu:
+class Menu:
     def __init__(self):
         self.options_list_dictionary = []
     
@@ -17,7 +17,7 @@ class menu:
         except:
             return getattr(self, list(self.options_list_dictionary.values())[option_index])(*arguments)
 
-class main_menu(menu):
+class MainMenu(Menu):
     def __init__(self):
         self.options_list_dictionary = {
             'Search for books': 'search_for_books'
@@ -26,16 +26,16 @@ class main_menu(menu):
         }
 
     def search_for_books(self):
-        return query_menu()
+        return QueryMenu()
 
     def display_local_reading_list(self):
-        return reading_list_menu()
+        return ReadingListMenu()
 
     def quit(self):
         print('quitting')
         quit()
 
-class sub_menu(menu):
+class SubMenu(Menu):
     def display_reading_list(self):
         print("Current reading list")
         dataframe = pandas.read_csv(reading_list_location)
@@ -44,16 +44,16 @@ class sub_menu(menu):
         print(dataframe)
 
     def return_to_main_menu(self):
-        return main_menu()
+        return MainMenu()
 
-class query_menu(sub_menu):
+class QueryMenu(SubMenu):
     def __init__(self):
         self.options_list_dictionary = {
             'Enter new query': 'enter_query'
             , 'Add title to reading list': 'add_to_reading_list'
             , 'Return to main menu': 'return_to_main_menu'
         }
-        self.backend = gb_backend.gb_backend()
+        self.backend = gb_backend.GbBackend()
 
     def enter_query(self):
         title = input("enter title: ")
@@ -93,7 +93,7 @@ class query_menu(sub_menu):
                 print("invalid index")
 
 
-class reading_list_menu(sub_menu):
+class ReadingListMenu(SubMenu):
     def __init__(self):
         self.options_list_dictionary = {
             'Display reading list': 'display_reading_list'

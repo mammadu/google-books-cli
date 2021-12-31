@@ -12,11 +12,11 @@ import gb_backend
 def parse_data_setup(file_name):
     with open(file_name, "r") as file:
         data = json.load(file)
-    backend = gb_backend.gb_backend()
+    backend = gb_backend.GbBackend()
     backend.parse_data(data)
     return backend.results_list
 
-#test if parse_data properly fills gb_backend.results_list when using good data
+#test if parse_data properly fills GbBackend.results_list when using good data
 def test_parse_data_good_value():
     test_file = str(test_path.joinpath("good_query.json"))
     results_list = parse_data_setup(test_file)

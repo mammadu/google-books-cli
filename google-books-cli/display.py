@@ -8,9 +8,9 @@ def clear():
         _ = system('clear')
 
 
-class display:
+class Display:
     def __init__(self):
-        self.current_menu = menu.main_menu()
+        self.current_menu = menu.MainMenu()
 
     def set_current_menu(self, menu):
         self.current_menu = menu
@@ -32,7 +32,7 @@ class display:
     
     def select_menu_option(self, option_index):
         function = self.current_menu.get_functions(option_index)
-        if isinstance(function, menu.menu):
+        if isinstance(function, menu.Menu):
             self.set_current_menu(function)
 
     def main(self):

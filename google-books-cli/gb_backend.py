@@ -2,7 +2,7 @@ import requests
 import pandas
 import json
 
-class gb_backend:
+class GbBackend:
     def __init__(self):
         self.baseurl = 'https://www.googleapis.com/books/v1/volumes?q='
         self.results_list = []
