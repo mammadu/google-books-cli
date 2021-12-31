@@ -47,3 +47,4 @@ def test_parse_data_less_than_5_results():
         ]
 
     assert single_result_list == expected_results_list
+
