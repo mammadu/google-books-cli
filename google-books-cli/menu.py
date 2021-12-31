@@ -32,7 +32,11 @@ class main_menu(menu):
         print('quitting')
         quit()
 
-class query_menu(menu):
+class sub_menu(menu):
+    def return_to_main_menu(self):
+        return main_menu()
+
+class query_menu(sub_menu):
     def __init__(self):
         self.options_list_dictionary = {
             'Enter new query': 'enter_query'
@@ -69,7 +73,7 @@ class query_menu(menu):
             index = self.convert_index_to_int(string_index)
             if index != -1 and index in range(len(self.backend.results_list)):
                 dataframe = self.format_dataframe(index, self.backend.results_list)
-                self.dataframe_to_csv(dataframe, read_list_location)
+                self.dataframe_to_csv(dataframe, reading_list_location)
                 print(dataframe)
             else:
                 print("invalid index")
@@ -78,10 +82,8 @@ class query_menu(menu):
         title = input("enter title: ")
         self.backend.results_of_query(title)
 
-    def return_to_main_menu(self):
-        return main_menu()
 
-class reading_list_menu(menu):
+class reading_list_menu(sub_menu):
     def __init__(self):
         self.options_list_dictionary = {
             'Display reading list': 'display_reading_list'
@@ -97,10 +99,7 @@ class reading_list_menu(menu):
         print(dataframe)
 
     def sort_titles(self):
-        print('sort titles')
+        print('This feature is not yet implemented')
 
     def remove_title(self):
-        print('remove title')
-    
-    def return_to_main_menu(self):
-        return main_menu()
+        print('This feature is not yet implemented')
