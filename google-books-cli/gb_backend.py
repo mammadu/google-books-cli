@@ -1,5 +1,6 @@
 import requests
 import pandas
+import json
 
 class gb_backend:
     def __init__(self):
@@ -11,8 +12,8 @@ class gb_backend:
         response = requests.get(url)
         data = response.json()
         #debug
-        with open("test_for_bad_strings.json", "w") as file:
-            file.write(str(data))
+        # with open("good_query.json", "w") as file:
+        #     json.dump(data, file)
         # print(data) #debug
         return data
 
@@ -45,6 +46,3 @@ class gb_backend:
         data = self.query_database(query)
         self.parse_data(data)
         self.print_results_list()
-
-        # with open("test.json", "w") as file: #debug
-        #     file.write(r.text)
