@@ -12,8 +12,8 @@ class gb_backend:
         response = requests.get(url)
         data = response.json()
         #debug
-        with open("bad_query.json", "w") as file:
-            json.dump(data, file)
+        # with open("bad_query.json", "w") as file:
+        #     json.dump(data, file)
         # print(data) #debug
         return data
 
@@ -53,6 +53,7 @@ class gb_backend:
     def print_results_list(self):
         formatted_index = (f"{i}:" for i in range(0,len(self.results_list)))
         dataframe = pandas.DataFrame(self.results_list, index=formatted_index)
+        pandas.set_option('display.max_colwidth', None)
         print(dataframe.rename_axis('Index', axis='columns'))
 
 
