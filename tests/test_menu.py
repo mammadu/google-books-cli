@@ -1,4 +1,5 @@
 import pathlib
+import pandas
 import sys
 
 source_path = str(pathlib.Path(__file__).resolve().parent.parent.joinpath("google-books-cli"))
@@ -19,3 +20,14 @@ def test_convert_invalid_index_to_int():
     int_index = current_menu.convert_index_to_int(string_index)
     
     assert int_index == -1
+
+def test_format_data_frame():
+    current_menu = menu.query_menu()
+    index = 0
+    current_menu.backend.results_list.append({'Title': 'Just Start', 'Authors': ['Leonard A. Schlesinger', 'Charles F. Kiefer', 'Paul B. Brown'], 'Publisher': 'Harvard Business Press'})
+    row = current_menu.backend.results_list[index].copy()
+    row['Authors'] = ', '.join(row['Authors'])
+    expected_dataframe = pandas.DataFrame.from_records([row])
+    test_dataframe = current_menu.format_dataframe(index, current_menu.backend.results_list)
+    assert test_dataframe['Authors'].equals(expected_dataframe['Authors'])
+    

@@ -40,8 +40,6 @@ class query_menu(menu):
             , 'Return to main menu': 'return_to_main_menu'
         }
         self.backend = gb_backend.gb_backend()
-    
-    # def get_index(self):
 
     def convert_index_to_int(self, index):
         try:
@@ -50,7 +48,12 @@ class query_menu(menu):
             index = -1
         return index
     
-    # def format_dataframe(self, index, backend):
+    def format_dataframe(self, index, backend_results_list):
+        row = backend_results_list[index]
+        row['Date added'] = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
+        row['Authors'] = ', '.join(row['Authors'])
+        dataframe = pandas.DataFrame.from_records([row])
+        return dataframe
 
     # def dataframe_to_csv(self, dataframe, read_list_location):
 
@@ -63,10 +66,7 @@ class query_menu(menu):
             string_index = input("select index of title: ")
             index = self.convert_index_to_int(string_index)
             if index != -1 and index in range(len(self.backend.results_list)):
-                row = self.backend.results_list[index]
-                row['Date added'] = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
-                row['Authors'] = ', '.join(row['Authors'])
-                dataframe = pandas.DataFrame.from_records([row])
+                dataframe = self.format_dataframe(index, self.backend.results_list)
                 with open(reading_list_location, 'a') as file:
                     dataframe.to_csv(file, index=False, mode='a', header=file.tell()==0)
                 print(dataframe)
