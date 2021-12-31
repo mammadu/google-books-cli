@@ -1,0 +1,78 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 1,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "CQWhAQAAQBAJ",
+            "etag": "k93TwZN8P1Q",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/CQWhAQAAQBAJ",
+            "volumeInfo": {
+                "title": "Worldwide Government Directory with Intergovernmental Organizations 2013",
+                "authors": [
+                    "John Martino"
+                ],
+                "publisher": "CQ Press",
+                "publishedDate": "2013",
+                "description": "Published for more than 24 years, there is no substitute for the Worldwide Government Directory, which allows users to identify and reach 32,000 elected and appointed officials in 201 countries, plus the European Union. Extensive coverage that includes over 1,800 pages of executive, legislative and political branches; heads of state, ministers, deputies, secretaries and spokespersons as well as state agencies, diplomats and senior level defense officials. It also covers the leadership of more than 100 international organizations. World Government contact information that includes phone numbers and email. Listings include: Name, addresses, telephone and fax numbers, email and web addresses Titles Hierarchical arrangements defining state structures",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781452299372"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1452299374"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 1912,
+                "printType": "BOOK",
+                "categories": [
+                    "Political Science"
+                ],
+                "averageRating": 3,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=CQWhAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=CQWhAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=CQWhAQAAQBAJ&pg=PA848&dq=asdfadc&hl=&cd=1&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=CQWhAQAAQBAJ&dq=asdfadc&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Worldwide_Government_Directory_with_Inte.html?hl=&id=CQWhAQAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=CQWhAQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            }
+        }
+    ]
+}
