@@ -12,7 +12,7 @@ class gb_backend:
         response = requests.get(url)
         data = response.json()
         #debug
-        # with open("good_query.json", "w") as file:
+        # with open("bad_query.json", "w") as file:
         #     json.dump(data, file)
         # print(data) #debug
         return data
@@ -24,16 +24,25 @@ class gb_backend:
         self.results_list.append(results_dict)
 
     def parse_data(self, data, length=5):
-        for i in range(length):
+        if list(data.keys())[0] == 'error':
             result_dict = {
-                'Title': data['items'][i]['volumeInfo']['title']
-                , 'Authors': data['items'][i]['volumeInfo']['authors']
+                'error code': data['error']['code']
+                , "message": data['error']['message']
             }
-            try:
-                result_dict['Publisher'] = data['items'][i]['volumeInfo']['publisher']
-            except KeyError as ex:
-                result_dict['Publisher'] = 'N/A'
             self.update_results_list(result_dict)
+        else:
+            if data['totalItems'] < length:
+                length = data['totalItems']
+            for i in range(length):
+                result_dict = {
+                    'Title': data['items'][i]['volumeInfo']['title']
+                    , 'Authors': data['items'][i]['volumeInfo']['authors']
+                }
+                try:
+                    result_dict['Publisher'] = data['items'][i]['volumeInfo']['publisher']
+                except KeyError as ex:
+                    result_dict['Publisher'] = 'N/A'
+                self.update_results_list(result_dict)
 
     def print_results_list(self):
         formatted_index = (f"{i}:" for i in range(0,len(self.results_list)))

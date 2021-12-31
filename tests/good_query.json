@@ -1,0 +1,898 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 2900,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "iyw6ul1x_n8C",
+            "etag": "29ezU8PJtG4",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/iyw6ul1x_n8C",
+            "volumeInfo": {
+                "title": "Start with Why",
+                "subtitle": "How Great Leaders Inspire Everyone to Take Action",
+                "authors": [
+                    "Simon Sinek"
+                ],
+                "publisher": "Penguin",
+                "publishedDate": "2009-10-29",
+                "description": "The inspiring, life-changing bestseller by the author of LEADERS EAT LAST and TOGETHER IS BETTER. In 2009, Simon Sinek started a movement to help people become more inspired at work, and in turn inspire their colleagues and customers. Since then, millions have been touched by the power of his ideas, including more than 28 million who\u2019ve watched his TED Talk based on START WITH WHY -- the third most popular TED video of all time. Sinek starts with a fundamental question: Why are some people and organizations more innovative, more influential, and more profitable than others? Why do some command greater loyalty from customers and employees alike? Even among the successful, why are so few able to repeat their success over and over? People like Martin Luther King Jr., Steve Jobs, and the Wright Brothers had little in common, but they all started with WHY. They realized that people won't truly buy into a product, service, movement, or idea until they understand the WHY behind it. START WITH WHY shows that the leaders who've had the greatest influence in the world all think, act, and communicate the same way -- and it's the opposite of what everyone else does. Sinek calls this powerful idea The Golden Circle, and it provides a framework upon which organizations can be built, movements can be led, and people can be inspired. And it all starts with WHY.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781101149034"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1101149035"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 256,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 33,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.20.13.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=iyw6ul1x_n8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=iyw6ul1x_n8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=iyw6ul1x_n8C&pg=PP1&dq=start&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=iyw6ul1x_n8C&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=iyw6ul1x_n8C"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 11.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 11.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=iyw6ul1x_n8C&rdid=book-iyw6ul1x_n8C&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 11990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 11990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Start_with_Why-sample-epub.acsm?id=iyw6ul1x_n8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=iyw6ul1x_n8C&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "START WITH WHY shows that the leaders who&#39;ve had the greatest influence in the world all think, act, and communicate the same way -- and it&#39;s the opposite of what everyone else does."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "2PuSDwAAQBAJ",
+            "etag": "em4b7nhj23I",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/2PuSDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Start",
+                "subtitle": "Punch Fear in the Face, Escape Average, and Do Work That Matters",
+                "authors": [
+                    "Jon Acuff"
+                ],
+                "publisher": "Ramsey Press",
+                "publishedDate": "2013-04-22",
+                "description": "Wall Street Journal best-selling author Jon Acuff reveals the steps to getting unstuck and back onto the path of being awesome. Over the last 100 years, the road to success for most everyone has been divided into five stages that mirror the decades of working life: Your 20s are a period of Learning. This is the decade of trying a thousand things, exploring a multitude of interests, and discovering what really motivates you. Your 30s are a period of Editing. This is the decade of sorting out interests, where you discover what you really care about and who you really are. Your 40s are a period of Mastering. This is the decade of narrowing focus, honing skill sets, and becoming an expert in your field. Your 50s are a period of Harvesting. This is the decade of reaping the benefits of good decisions and enjoying the highest income-earning period in a career. Your 60s are a period of Guiding. This is the decade of mentoring, training, and encouraging others on their own road to success. Every successful person has followed these steps regardless of their occupation. But three things have changed the path to success and erased the decades associated with them: Finish lines are dead \u2013 Boomers are realizing that a lot of the things they were promised aren\u2019t going to materialize, and they have started second and third careers. Anyone can play \u2013 Technology has given access to an unprecedented number of people who are building online empires and changing their lives in ways that would have been impossible years ago. Hope is boss \u2013 The days of \u201csuccess first, significance later,\u201d have ended. A new generation doesn\u2019t want to change the world eventually; they want to change it now through the wells they kickstart in Africa and the TOMS they wear on their feet. The value system has been flipped upside down. The result is that you\u2019ve got an entire generation pushing down to start over, another generation pushing up to start for the first time, and in the middle of this collision, the tools to actually change the world. Experience years now trump chronological age. And while none of the five stages can be skipped, they can be shortened and accelerated. There are only two paths in life: average and awesome. The average path is easy because all you have to do is nothing. The awesome path is more challenging, because things like fear only bother you when you do work that matters. The good news is Start gives readers practical, honest, actionable insights to be more awesome, more often. It\u2019s time to punch fear in the face, escape average, and do work that matters. It\u2019s time to Start.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781937077594"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1937077594"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 272,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.1.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=2PuSDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=2PuSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=2PuSDwAAQBAJ&pg=PP1&dq=start&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=2PuSDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=2PuSDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 9.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 9.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=2PuSDwAAQBAJ&rdid=book-2PuSDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 9990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 9990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Start-sample-epub.acsm?id=2PuSDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Start-sample-pdf.acsm?id=2PuSDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=2PuSDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This is the decade of trying a thousand things, exploring a multitude of interests, and discovering what really motivates you. Your 30s are a period of Editing."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "H3g_4TpRWw8C",
+            "etag": "5ivWmhD9CTg",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/H3g_4TpRWw8C",
+            "volumeInfo": {
+                "title": "Just Start",
+                "subtitle": "Take Action, Embrace Uncertainty, Create the Future",
+                "authors": [
+                    "Leonard A. Schlesinger",
+                    "Charles F. Kiefer",
+                    "Paul B. Brown"
+                ],
+                "publisher": "Harvard Business Press",
+                "publishedDate": "2012",
+                "description": "Outlines a path to success based on creativity and problem solving despite the changing economic clmate and future uncertainty.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781422143612"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1422143619"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 196,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.1.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=H3g_4TpRWw8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=H3g_4TpRWw8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=H3g_4TpRWw8C&printsec=frontcover&dq=start&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=H3g_4TpRWw8C&dq=start&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Just_Start.html?hl=&id=H3g_4TpRWw8C"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Just_Start-sample-epub.acsm?id=H3g_4TpRWw8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Just_Start-sample-pdf.acsm?id=H3g_4TpRWw8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=H3g_4TpRWw8C&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In this visually stunning book, author George Bahto presents a compelling look into the work of MacDonald, Raynor, and associate Charles Banks."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "KfBlcGzyvf8C",
+            "etag": "RsAe3qcVS00",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/KfBlcGzyvf8C",
+            "volumeInfo": {
+                "title": "Start Late, Finish Rich",
+                "subtitle": "A No-fail Plan for Achieving Financial Freedom at Any Age",
+                "authors": [
+                    "David Bach"
+                ],
+                "publisher": "Currency",
+                "publishedDate": "2007",
+                "description": "The best-selling author of The Automatic Millionaire offers financial hope for individuals who have forgotten to save for their retirement, sharing his secrets for achieving financial freedom regardless of one's age or status in life, using the principles of Spend Less, Save More, and Make More. Reprint. 200,000 first printing.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780767919470"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0767919475"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 348,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 9,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.0.0.preview.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=KfBlcGzyvf8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=KfBlcGzyvf8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=KfBlcGzyvf8C&printsec=frontcover&dq=start&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=KfBlcGzyvf8C&dq=start&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Start_Late_Finish_Rich.html?hl=&id=KfBlcGzyvf8C"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=KfBlcGzyvf8C&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Why? Because they don&#39;t know how. You can start late and finish rich--but you need a plan. This book contains the plan. It&#39;s inspiring, easy to follow, and is based on proven financial principles."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ifhrfJnYVfkC",
+            "etag": "n1cv/BytMU8",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ifhrfJnYVfkC",
+            "volumeInfo": {
+                "title": "Start Something That Matters",
+                "authors": [
+                    "Blake Mycoskie"
+                ],
+                "publisher": "Random House",
+                "publishedDate": "2012-05-15",
+                "description": "The incredible story of the man behind TOMS Shoes and One for One, the revolutionary business model that marries fun, profit, and social good \u201cA creative and open-hearted business model for our times.\u201d\u2014The Wall Street Journal Why this book is for you: \u2022 You\u2019re ready to make a difference in the world\u2014through your own start-up business, a nonprofit organization, or a new project that you create within your current job. \u2022 You want to love your work, work for what you love, and have a positive impact on the world\u2014all at the same time. \u2022 You\u2019re inspired by charity: water, method, and FEED Projects and want to learn how these organizations got their start. \u2022 You\u2019re curious about how someone who never made a pair of shoes, attended fashion school, or worked in retail created one of the fastest-growing footwear companies in the world by giving shoes away. \u2022 You\u2019re looking for a new model of success to share with your children, students, co-workers, and members of your community. You\u2019re ready to start something that matters. With every book you purchase, a new book will be provided to a child in need. One for One.\u2122",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780812981445"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0812981448"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 224,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 24,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.4.1.0.preview.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ifhrfJnYVfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ifhrfJnYVfkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ifhrfJnYVfkC&printsec=frontcover&dq=start&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ifhrfJnYVfkC&dq=start&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Start_Something_That_Matters.html?hl=&id=ifhrfJnYVfkC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ifhrfJnYVfkC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The incredible story of the man behind TOMS Shoes and One for One, the revolutionary business model that marries fun, profit, and social good \u201cA creative and open-hearted business model for our times.\u201d\u2014The Wall Street Journal Why this ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ZkY83iCnKfsC",
+            "etag": "nYorKhyPS6Y",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ZkY83iCnKfsC",
+            "volumeInfo": {
+                "title": "Start-up Nation",
+                "subtitle": "The Story of Israel's Economic Miracle",
+                "authors": [
+                    "Dan Senor",
+                    "Saul Singer"
+                ],
+                "publisher": "Twelve",
+                "publishedDate": "2011-09-07",
+                "description": "START-UP NATION addresses the trillion dollar question: How is it that Israel-- a country of 7.1 million, only 60 years old, surrounded by enemies, in a constant state of war since its founding, with no natural resources-- produces more start-up companies than large, peaceful, and stable nations like Japan, China, India, Korea, Canada and the UK? With the savvy of foreign policy insiders, Senor and Singer examine the lessons of the country's adversity-driven culture, which flattens hierarchy and elevates informality-- all backed up by government policies focused on innovation. In a world where economies as diverse as Ireland, Singapore and Dubai have tried to re-create the \"Israel effect\", there are entrepreneurial lessons well worth noting. As America reboots its own economy and can-do spirit, there's never been a better time to look at this remarkable and resilient nation for some impressive, surprising clues.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781455503469"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1455503460"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 336,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 8,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.6.5.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ZkY83iCnKfsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ZkY83iCnKfsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ZkY83iCnKfsC&printsec=frontcover&dq=start&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=ZkY83iCnKfsC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ZkY83iCnKfsC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 11.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 11.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=ZkY83iCnKfsC&rdid=book-ZkY83iCnKfsC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 11990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 11990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Start_up_Nation-sample-epub.acsm?id=ZkY83iCnKfsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ZkY83iCnKfsC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Start-Up Nation addresses the trillion dollar question: How is it that Israel -- a country of 7.1 million, only 60 years old, surrounded by enemies, in a constant state of war since its founding, with no natural resources-- produces more ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "OjDBmAEACAAJ",
+            "etag": "p+xy6UWz9hg",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/OjDBmAEACAAJ",
+            "volumeInfo": {
+                "title": "Stop Whining, Start Living",
+                "authors": [
+                    "Dr. Laura Schlessinger"
+                ],
+                "publisher": "Harper Perennial",
+                "publishedDate": "2008-12-23",
+                "description": "Living life is about action: courageous, benevolent, worthy, Wise, and productive action. Start living with some help from Dr. Laura Schlessinger. Dr. Laura Schlessinger agrees that there are things worth whining about. A certain amount of whining allows for venting of reasonable pain, disappointment, fear, frustration, or rage. However, staying stuck in whining mode can become a lifelong problem. This is where Dr. Laura steps in with Stop Whining, Start Living to help folks conquer the temptation to retreat from living life to the fullest. Illustrated by calls and letters from members of Dr. Laura's huge international audience, Stop Whining, Start Living features testimonials from real people facing real challenges. These folks have benefited enormously from Dr. Laura's powerful lessons. Stop Whining, Start Living gives readers the jump start they need to break out of reactive mode and get proactive, moving in the direction of a joyful, meaningful, fulfilling, and purposeful future. Everyone can use a kick in the pants sometimes, and Dr. Laura, who \"preaches, teaches, and nags\" to millions every day on her radio program, is here to deliver it!",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0060838345"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780060838348"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 224,
+                "printType": "BOOK",
+                "categories": [
+                    "Self-Help"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=OjDBmAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=OjDBmAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=OjDBmAEACAAJ&dq=start&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=OjDBmAEACAAJ&dq=start&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Stop_Whining_Start_Living.html?hl=&id=OjDBmAEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=OjDBmAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "However, staying stuck in whining mode can become a lifelong problem. This is where Dr. Laura steps in with Stop Whining, Start Living to help folks conquer the temptation to retreat from living life to the fullest."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "jKWtDwAAQBAJ",
+            "etag": "pRDQnQ6vjSw",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/jKWtDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Finish What You Start",
+                "subtitle": "The Art of Following Through, Taking Action, Executing, & Self-Discipline",
+                "authors": [
+                    "Peter Hollins"
+                ],
+                "publisher": "PublishDrive",
+                "publishedDate": "2019-08-13",
+                "description": "Practical tactics to grow your willpower, stop procrastination, focus like a laser, and achieve whatever you set your mind to. Following through and finishing what you start- more valuable skills than you realize. They are a combination of traits that enables you to create the life you want - without having to compromise or wait. The alternative is a status quo that you\u2019re stuck in. Is your life a series of unfinished tasks and intentions? That stops now. Finish What You Start is a unique deep dive into the psychology and science of accomplishment, productivity, and getting things done. It takes a thorough look why we are sometimes stuck, and gives detailed, step by step solutions you can start using today. Every phase of finishing and following through is covered, and even productivity pros will be able to learn something new. Above all else, this is a guide to understanding your brain and instincts better for optimal results. Channel massive productivity and mental toughness. Peter Hollins has studied psychology and peak human performance for over a dozen years and is a bestselling author. He has worked with dozens of individuals to unlock their potential and path towards success. His writing draws on his academic, coaching, and research experience. Resist distractions, de-motivation, temptations, laziness, and excuses. \u2022The surprising motivations that push us past obstacles. \u2022How daily rules and a manifesto can help you achieve. \u2022Valuable and insightful mindsets to view productivity from entirely new lights. Seize self-control and finally accomplish your big and small goals. \u2022The science and tactics to beating procrastination easily. \u2022Focus and willpower pitfalls you are probably committing at this very moment. \u2022How to beat distractions, remain focused, stay on task, and get to what matters - consistently. Transform your life through productive habits and avoiding mental traps.",
+                "industryIdentifiers": [
+                    {
+                        "type": "OTHER",
+                        "identifier": "PKEY:6610000213122"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 208,
+                "printType": "BOOK",
+                "categories": [
+                    "Study Aids"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.33.30.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=jKWtDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=jKWtDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=jKWtDwAAQBAJ&printsec=frontcover&dq=start&hl=&cd=8&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=jKWtDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=jKWtDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 3.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 3.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=jKWtDwAAQBAJ&rdid=book-jKWtDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 3990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 3990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Finish_What_You_Start-sample-epub.acsm?id=jKWtDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Finish_What_You_Start-sample-pdf.acsm?id=jKWtDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=jKWtDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Every phase of finishing and following through is covered, and even productivity pros will be able to learn something new. Above all else, this is a guide to understanding your brain and instincts better for optimal results."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "9yivJI3QfVcC",
+            "etag": "lrJk1XmHLGI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/9yivJI3QfVcC",
+            "volumeInfo": {
+                "title": "Ultimate Beginner Tech Start Series\u00ae: Live Sound Basics",
+                "authors": [
+                    "Tony Marvuglio"
+                ],
+                "publisher": "Alfred Music",
+                "description": "Live Sound Basics is designed to have you running PAs and mixers in no time. This book provides the foundation necessary to understand and use live audio equipment so that every performance has a professional sound. It's a must for any performer!",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "145740110X"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781457401107"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 52,
+                "printType": "BOOK",
+                "categories": [
+                    "Music"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.2.4.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=9yivJI3QfVcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=9yivJI3QfVcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=9yivJI3QfVcC&pg=PT2&dq=start&hl=&cd=9&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=9yivJI3QfVcC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=9yivJI3QfVcC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 9.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 9.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=9yivJI3QfVcC&rdid=book-9yivJI3QfVcC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 9990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 9990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Ultimate_Beginner_Tech_Start_Series_Live-sample-pdf.acsm?id=9yivJI3QfVcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=9yivJI3QfVcC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "ULTIMATE BEGINNER TECH <b>START</b> SERIES ULTIMATE BEGINNER TECH <b>START</b> SERIES LIVE SOUND BASICS By TONY MARVUGLIO Learn the basics of : Sound Reinforcement Mixers Speakers Signal Processors Microphones Amplifiers And much more This book is&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "CeVoDwAAQBAJ",
+            "etag": "fDELLekA3PY",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/CeVoDwAAQBAJ",
+            "volumeInfo": {
+                "title": "The Start-up PUSH",
+                "subtitle": "A Guide for Developers, Directors and Residents Incubators, Accelerators, and Science Parks",
+                "authors": [
+                    "Terri Friel",
+                    "George Vukotich"
+                ],
+                "publisher": "IAP",
+                "publishedDate": "2018-07-01",
+                "description": "This book explores, documents and establishes how to help founders start businesses with the collaboration of local and international resources. An incubator, accelerator or science park all have this goal but provide a variety of foci and support. At a minimum, it\u2019s important to not only attract entrepreneurs but to have support services that can include mentoring, financial support and other services that make the incubator really filled with energy and potential. It\u2019s becoming insufficient to just have office space and WiFi. It is also important to develop good interactions between directors, the start-up community and residents. Managing the community to help residents to launch successfully is the main goal of the director. It\u2019s also important to stay abreast of the innovations happening in start-up support. Today there are many ways to incubate from bare bones office space to Incubator 1.0 space with some support to Incubator 2.0 with a great deal of support including a fund. For that reason, it\u2019s important to develop a clear strategy for the type, style, clientele and support that will be built. This book provides guidance in three main areas: 1) What are the different options for incubators, accelerators and science parks, 2) How to assist the start-up founders (residents) and 3) How to manage the space.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781641133609"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1641133600"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 155,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=CeVoDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=CeVoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=CeVoDwAAQBAJ&pg=PA21&dq=start&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=CeVoDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=CeVoDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 74,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 74,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=CeVoDwAAQBAJ&rdid=book-CeVoDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 74000000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 74000000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_Start_up_PUSH-sample-pdf.acsm?id=CeVoDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=CeVoDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Steve Blank and Bob Dorf define a <b>start</b>-up as an \u201corganization formed to search for a repeatable and scalable business model\u201d (Blank, 2010, n.p.). In this case, the verb \u201csearch\u201d is intended to differentiate large, that is,&nbsp;..."
+            }
+        }
+    ]
+}
