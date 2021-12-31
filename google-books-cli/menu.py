@@ -1,8 +1,11 @@
 import gb_backend
 import pandas
 from datetime import datetime
+import pathlib
 
-reading_list_location = "reading_list.csv"
+source_path = pathlib.Path(__file__).resolve().parent
+
+reading_list_location = str(source_path.joinpath("reading_list.csv"))
 
 class menu:
     def __init__(self):
@@ -33,6 +36,13 @@ class main_menu(menu):
         quit()
 
 class sub_menu(menu):
+    def display_reading_list(self):
+        print("Current reading list")
+        dataframe = pandas.read_csv(reading_list_location)
+        formatted_index = (f"{i}:" for i in range(len(dataframe)))
+        dataframe.set_index(formatted_index, inplace=True)
+        print(dataframe)
+
     def return_to_main_menu(self):
         return main_menu()
 
@@ -44,6 +54,10 @@ class query_menu(sub_menu):
             , 'Return to main menu': 'return_to_main_menu'
         }
         self.backend = gb_backend.gb_backend()
+
+    def enter_query(self):
+        title = input("enter title: ")
+        self.backend.results_of_query(title)
 
     def convert_index_to_int(self, index):
         try:
@@ -74,13 +88,9 @@ class query_menu(sub_menu):
             if index != -1 and index in range(len(self.backend.results_list)):
                 dataframe = self.format_dataframe(index, self.backend.results_list)
                 self.dataframe_to_csv(dataframe, reading_list_location)
-                print(dataframe)
+                self.display_reading_list()
             else:
                 print("invalid index")
-
-    def enter_query(self):
-        title = input("enter title: ")
-        self.backend.results_of_query(title)
 
 
 class reading_list_menu(sub_menu):
@@ -92,12 +102,6 @@ class reading_list_menu(sub_menu):
             , 'Return to main menu': 'return_to_main_menu'
         }
     
-    def display_reading_list(self):
-        dataframe = pandas.read_csv(reading_list_location)
-        formatted_index = (f"{i}:" for i in range(len(dataframe)))
-        dataframe.set_index(formatted_index, inplace=True)
-        print(dataframe)
-
     def sort_titles(self):
         print('This feature is not yet implemented')
 
