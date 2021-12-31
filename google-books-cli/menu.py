@@ -55,7 +55,9 @@ class query_menu(menu):
         dataframe = pandas.DataFrame.from_records([row])
         return dataframe
 
-    # def dataframe_to_csv(self, dataframe, read_list_location):
+    def dataframe_to_csv(self, dataframe, read_list_location):
+        with open(read_list_location, 'a') as file:
+            dataframe.to_csv(file, index=False, mode='a', header=file.tell()==0)
 
     def add_to_reading_list(self):
         if len(self.backend.results_list) == 0:
@@ -67,8 +69,7 @@ class query_menu(menu):
             index = self.convert_index_to_int(string_index)
             if index != -1 and index in range(len(self.backend.results_list)):
                 dataframe = self.format_dataframe(index, self.backend.results_list)
-                with open(reading_list_location, 'a') as file:
-                    dataframe.to_csv(file, index=False, mode='a', header=file.tell()==0)
+                self.dataframe_to_csv(dataframe, read_list_location)
                 print(dataframe)
             else:
                 print("invalid index")

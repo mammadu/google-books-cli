@@ -2,7 +2,8 @@ import pathlib
 import pandas
 import sys
 
-source_path = str(pathlib.Path(__file__).resolve().parent.parent.joinpath("google-books-cli"))
+test_path = pathlib.Path(__file__).resolve().parent
+source_path = test_path.parent.joinpath("google-books-cli")
 sys.path.insert(0, source_path)
 
 import menu
@@ -29,5 +30,5 @@ def test_format_data_frame():
     row['Authors'] = ', '.join(row['Authors'])
     expected_dataframe = pandas.DataFrame.from_records([row])
     test_dataframe = current_menu.format_dataframe(index, current_menu.backend.results_list)
-    assert test_dataframe['Authors'].equals(expected_dataframe['Authors'])
     
+    assert test_dataframe['Authors'].equals(expected_dataframe['Authors'])
