@@ -41,17 +41,27 @@ class query_menu(menu):
         }
         self.backend = gb_backend.gb_backend()
     
+    # def get_index(self):
+
+    def convert_index_to_int(self, index):
+        try:
+            index = int(index)
+        except ValueError as ex:
+            index = -1
+        return index
+    
+    # def format_dataframe(self, index, backend):
+
+    # def dataframe_to_csv(self, dataframe, read_list_location):
+
     def add_to_reading_list(self):
         if len(self.backend.results_list) == 0:
             print('you must first enter a query')
         else:
             self.backend.print_results_list()
             print()
-            index = input("select index of title: ")
-            try:
-                index = int(index)
-            except ValueError as ex:
-                index = -1
+            string_index = input("select index of title: ")
+            index = self.convert_index_to_int(string_index)
             if index != -1 and index in range(len(self.backend.results_list)):
                 row = self.backend.results_list[index]
                 row['Date added'] = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
