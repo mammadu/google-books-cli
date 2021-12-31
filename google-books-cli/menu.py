@@ -82,8 +82,8 @@ class QueryMenu(SubMenu):
             dataframe.to_csv(file, index=False, mode='a', header=file.tell() == 0)
 
     def add_to_reading_list(self):
-        if len(self.backend.results_list) == 0:
-            print('you must first enter a query')
+        if len(self.backend.results_list) == 0 or list(self.backend.results_list[0].keys())[0] == 'error code':
+            print('you must first enter a valid query')
         else:
             self.backend.print_results_list()
             print()
